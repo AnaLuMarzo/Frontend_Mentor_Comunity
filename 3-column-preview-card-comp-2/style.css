@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: hsl(0, 0%, 95%);
+    }
+
+.container {
+    width: 100%; 
+    max-width: 1100px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center; 
+    margin:auto;
+}   
+
+.cards {
+    padding: 45px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 95%);
+    margin-left: 100px;
+ }
+
+.cards img {
+    margin: 50px 0px 0px 50px;
+}
+
+.cards h4 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    margin: 30px 0px 0px 50px;
+    }
+
+.cards p {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    margin: 30px 50px 30px 50px;
+    line-height: 200%;
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    height: 500px;
+    border-radius: 10px 0 0 10px;
+}
+.SUVs {
+    background: hsl(184, 100%, 22%);
+    height: 500px;
+    }
+.Luxury {
+    background: hsl(179, 100%, 13%);
+    height: 500px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.cards button[type="submit"] {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    margin: 50px 50px 70px 50px;
+    border: 0;
+    background: hsl(0, 0%, 95%);
+    display: block; 
+    padding: 14px 10px; 
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 95%);
+    width: 150px;  
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer; 
+}
+
+.cards .sedans button[type="submit"]{
+    color: hsl(31, 77%, 52%);
+}
+.cards .SUVs button[type="submit"]{
+    color: hsl(184, 100%, 22%);
+}
+.cards .Luxury button[type="submit"]{
+    color: hsl(179, 100%, 13%);
+}
+
+.cards button[type="submit"]:hover {
+    background: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 1440px) {
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+            }
+}
+@media screen and (max-width: 375px) {
+    .cards {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .Luxury {
+        background: hsl(179, 100%, 13%);
+        height: 500px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .cards button[type="submit"] {
+        margin: 0px 50px 70px 50px;
+    }
+}
